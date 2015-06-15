@@ -1,0 +1,72 @@
+# Path to your oh-my-fish.
+set fish_path $HOME/.oh-my-fish
+
+# Theme
+set fish_theme robbyrussell
+
+# Which plugins would you like to load? (plugins can be found in ~/.oh-my-fish/plugins/*)
+# Custom plugins may be added to ~/.oh-my-fish/custom/plugins/
+# Example format: set fish_plugins bundler z
+
+# Path to your custom folder (default path is ~/.oh-my-fish/custom)
+#set fish_custom $HOME/dotfiles/oh-my-fish
+
+# Load oh-my-fish configuration.
+. $fish_path/oh-my-fish.fish
+
+set -x PATH /Users/chaitanyagupta/bin/Sencha/Cmd/5.1.2.52 $PATH
+
+set -x PATH /Users/chaitanyagupta/bin/jruby/bin $PATH
+
+set -x PATH /Library/Frameworks/Python.framework/Versions/2.7/bin $PATH
+
+set -x SENCHA_CMD_3_0_0 /Users/chaitanyagupta/bin/Sencha/Cmd/5.1.2.52
+
+#bower
+set -x PATH /usr/local/bin/bower
+
+#Go-lang
+set -x GOPATH $HOME/Go/src/github.com/user
+
+#thefuck
+function fuck -d 'Correct your previous console command'
+    set -l exit_code $status
+    set -l eval_script (mktemp 2>/dev/null ; or mktemp -t 'thefuck')
+    set -l fucked_up_command $history[1]
+    thefuck $fucked_up_command > $eval_script
+    . $eval_script
+    rm $eval_script
+    if test $exit_code -ne 0
+        history --delete $fucked_up_command
+    end
+end
+
+# Aliases
+
+# Git
+
+alias r "ranger"
+
+alias gs "git status"
+alias gp "git push origin master"
+alias ga "git add"
+alias gc "git commit"
+alias gpl "git pull"
+alias gdf "git diff"
+alias gdc "git diff --cached"
+alias gch "git checkout"
+alias gr "git reset HEAD"
+
+alias gb "git branch"
+alias grbi "git rebase -i master"
+
+alias gst "git stash"
+alias gstp "git stash pop"
+
+alias gcm "git commit --amend"
+
+alias psqld "pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
+
+#config
+
+alias dotfish " subl ~/.config/fish/config.fish"
