@@ -48,7 +48,7 @@ end
 alias r "ranger"
 
 alias gs "git status"
-alias gp "git push origin master"
+alias gp "git push"
 alias ga "git add"
 alias gc "git commit"
 alias gpl "git pull"
@@ -69,4 +69,4 @@ alias psqld "pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server
 
 #config
 
-alias dotfish " subl ~/.config/fish/config.fish"
+alias dotfish "~/.config/fish/config.fish"
