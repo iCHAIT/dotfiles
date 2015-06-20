@@ -1,0 +1,11 @@
+[filter "media"]
+	required = true
+	clean = git media clean %f
+	smudge = git media smudge %f
+[user]
+	name = iCHAIT
+	email = cgupta319@gmail.com
+[push]
+	default = simple
+[core]
+	excludesfile = /Users/chaitanyagupta/.gitignore_global
