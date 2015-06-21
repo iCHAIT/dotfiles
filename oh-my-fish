@@ -69,4 +69,4 @@ alias psqld "pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server
 
 #config
 
-alias dotfish "~/.config/fish/config.fish"
+alias dotfish "subl ~/.config/fish/config.fish"
