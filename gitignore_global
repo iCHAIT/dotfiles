@@ -1,6 +1,6 @@
 .DS_Store
-Whats Fresh.sublime-project
-Whats Fresh.sublime-workspace
+*.sublime-project
+*.sublime-workspace
 
 .AppleDouble
 .LSOverride
