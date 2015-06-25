@@ -70,3 +70,7 @@ alias psqld "pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server
 #config
 
 alias dotfish "subl ~/.config/fish/config.fish"
+
+#subliminal
+
+alias sublimial "subliminal -l en --"
