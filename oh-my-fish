@@ -63,7 +63,7 @@ alias grbi "git rebase -i master"
 alias gst "git stash"
 alias gstp "git stash pop"
 
-alias gcm "git commit --amend"
+alias gca "git commit --amend"
 
 alias psqld "pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
 
