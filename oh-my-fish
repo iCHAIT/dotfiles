@@ -49,6 +49,7 @@ alias r "ranger"
 
 alias gs "git status"
 alias gp "git push"
+alias gpf "git push --force"
 alias ga "git add"
 alias gc "git commit"
 alias gpl "git pull"
