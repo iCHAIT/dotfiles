@@ -8,4 +8,5 @@
 [push]
 	default = simple
 [core]
-	excludesfile = /Users/chaitanyagupta/.gitignore_global
+	excludesfile = /Users/chaitanyagupta/Desktop/dotfiles/git/gitignore_global
+	editor = vim
