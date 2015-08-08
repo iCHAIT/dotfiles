@@ -9,4 +9,3 @@
 	default = simple
 [core]
 	excludesfile = /Users/chaitanyagupta/Desktop/dotfiles/git/gitignore_global
-	editor = vim
