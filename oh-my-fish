@@ -41,6 +41,15 @@ function fuck -d 'Correct your previous console command'
     end
 end
 
+#git-radar
+function fish_prompt
+    set_color $fish_color_cwd
+    echo -n (prompt_pwd)
+    git-radar --fish -fetch
+    set_color normal
+    echo -n ' > '
+end
+
 # Aliases
 
 # Git
