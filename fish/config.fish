@@ -26,7 +26,7 @@ set -x SENCHA_CMD_3_0_0 /Users/chaitanyagupta/bin/Sencha/Cmd/5.1.2.52
 set -x PATH /usr/local/bin/bower
 
 #Go-lang
-set -x GOPATH $HOME/Go/src/github.com/user
+set -x GOPATH $HOME/Go/
 
 #thefuck
 function fuck -d 'Correct your previous console command'
@@ -39,15 +39,6 @@ function fuck -d 'Correct your previous console command'
     if test $exit_code -ne 0
         history --delete $fucked_up_command
     end
-end
-
-#git-radar
-function fish_prompt
-    set_color $fish_color_cwd
-    echo -n (prompt_pwd)
-    git-radar --fish -fetch
-    set_color normal
-    echo -n ' > '
 end
 
 # Aliases
@@ -67,6 +58,8 @@ alias gdc "git diff --cached"
 alias gch "git checkout"
 alias gr "git reset HEAD"
 
+alias gl ""
+
 alias gb "git branch"
 alias grbi "git rebase -i master"
 
@@ -77,10 +70,9 @@ alias gca "git commit --amend"
 
 alias psqld "pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
 
-#config
-
-alias dotfish "subl ~/.config/fish/config.fish"
-
 #subliminal
-
 alias sublimial "subliminal -l en --"
+
+# go repo's
+alias cheat "go/src/github.com/user/bin/cheat"
+alias noti "go/src/github.com/user/bin/noti"
