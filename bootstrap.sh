@@ -13,3 +13,7 @@ ln -f $DIR/bash/bashrc ~/.bashrc
 # wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O - | sh
 rm ~/.zshrc
 ln -sf $DIR/zsh/zshrc ~/.zshrc
+
+# fish
+rm ~/.config/fish/config.fish
+ln -sf $DIR/fish/config.fish  ~/.config/fish/config.fish
