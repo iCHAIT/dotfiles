@@ -43,9 +43,37 @@ end
 
 # Aliases
 
+
+# Python
+alias py="python"
+alias py2="python2"
+alias py3="python3"
+
+# Virtualenv
+alias venv="virtualenv"
+
+# Serve a directory
+alias pysrv="python3 -m http.server "
+
+# ranger
+alias r "ranger"
+
+# Quick Ping!
+alias pingu="ping 8.8.8.8"
+
+# postgresql
+alias psqld "pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
+
+#subliminal
+alias sub "subliminal -l en -- "
+
+# go repo's
+alias cheat "go/src/github.com/user/bin/cheat"
+alias noti "go/src/github.com/user/bin/noti"
+
+
 # Git
 
-alias r "ranger"
 
 alias gs "git status"
 alias gp "git push"
@@ -67,12 +95,3 @@ alias gst "git stash"
 alias gstp "git stash pop"
 
 alias gca "git commit --amend"
-
-alias psqld "pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
-
-#subliminal
-alias sublimial "subliminal -l en --"
-
-# go repo's
-alias cheat "go/src/github.com/user/bin/cheat"
-alias noti "go/src/github.com/user/bin/noti"

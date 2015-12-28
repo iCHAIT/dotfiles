@@ -121,7 +121,7 @@ alias sub="subliminal -l en -- "
 # Quick Ping!
 alias pingu="ping 8.8.8.8"
 
-# Misc.
+# Ranger
 alias r="ranger"
 
 # postgresql
