@@ -77,16 +77,57 @@ source $ZSH/oh-my-zsh.sh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
 
-# Custom Aliases
-source $dot/zsh/aliases.zsh
-source $dot/zsh/aliases.git.zsh
-
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
-#
 
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# autojump
+[[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
+
+
+# Python
+alias py="python"
+alias py2="python2"
+alias py3="python3"
+
+# Virtualenv
+alias venv="virtualenv"
+
+# Serve a directory
+alias pysrv="python3 -m http.server "
+
+# https://github.com/Diaoul/subliminal
+alias sub="subliminal -l en -- "
+
+# Quick Ping!
+alias pingu="ping 8.8.8.8"
+
+# Misc.
+alias r="ranger"
+
+# postgresql
+alias psqld="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
+
+
+# Git
+
+alias gs="git status"
+alias gp="git push"
+alias gpf="git push --force"
+alias ga="git add"
+alias gc="git commit"
+alias gpl="git pull"
+alias gdf="git diff"
+alias gdc="git diff --cached"
+alias gch="git checkout"
+alias gr="git reset HEAD"
+
+alias gb="git branch"
+alias grbi="git rebase -i master"
+
+alias gst="git stash"
+alias gstp="git stash pop"
+
+alias gca="git commit --amend"
