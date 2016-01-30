@@ -70,6 +70,7 @@ alias sub "subliminal -l en -- "
 # go repo's
 alias cheat "go/src/github.com/user/bin/cheat"
 alias noti "go/src/github.com/user/bin/noti"
+alias asciinema "go/src/github.com/user/bin/asciinema"
 
 
 # Git
