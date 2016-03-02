@@ -58,13 +58,10 @@ ZSH_THEME="af-magic"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git pip node npm pep8 python pylint pyenv terminator colored-man history-substring-search command-not-found)
+plugins=(git pip node npm pep8 python pylint pyenv terminator colored-man history-substring-search command-not-found zsh-autosuggestions)
 
 # Load zsh-syntax-highlighting.
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-# Load zsh-autosuggestions.
-source ~/.zsh/zsh-autosuggestions/autosuggestions.zsh
 
 # Enable autosuggestions automatically.
 zle-line-init() {
