@@ -1,3 +1,6 @@
+# Python virtualenv
+env/
+
 # Mac specific
 .DS_Store
 
