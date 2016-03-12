@@ -71,9 +71,6 @@ zle -N zle-line-init
 
 # User configuration
 
-# complete entire suggestion with right arrow
-export AUTOSUGGESTION_ACCEPT_RIGHT_ARROW=1
-
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -132,6 +129,9 @@ alias pingu="ping 8.8.8.8"
 
 # Ranger
 alias r="ranger"
+
+#ptpython
+alias ptpy="ptpython"
 
 # postgresql
 alias psqld="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
