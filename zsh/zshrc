@@ -6,6 +6,9 @@ export PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:/Users/chaita
 # pipsi
 export PATH=/Users/chaitanyagupta/.local/bin:$PATH
 
+# anaconda
+export PATH=~/anaconda2/bin:$PATH
+
 # export PATH="$HOME/.local/bin:$PATH"
 
 # Set name of the theme to load.
@@ -14,6 +17,7 @@ export PATH=/Users/chaitanyagupta/.local/bin:$PATH
 # time that oh-my-zsh is loaded.
 # ZSH_THEME="robbyrussell"
 ZSH_THEME="af-magic"
+
 
 
 # Uncomment the following line to use case-sensitive completion.
@@ -157,3 +161,6 @@ alias gst="git stash"
 alias gstp="git stash pop"
 
 alias gca="git commit --amend"
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
