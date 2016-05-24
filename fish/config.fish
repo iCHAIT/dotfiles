@@ -52,6 +52,14 @@ alias py3="python3"
 # Virtualenv
 alias venv="virtualenv"
 
+# autojump
+[ -f /usr/local/share/autojump/autojump.fish ]; and . /usr/local/share/autojump/autojump.fish
+
+#fisher
+for file in ~/.config/fish/conf.d/*.fish
+    source $file
+end
+
 # Serve a directory
 alias pysrv="python3 -m http.server "
 
