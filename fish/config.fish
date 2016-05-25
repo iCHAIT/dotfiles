@@ -4,6 +4,8 @@ set fish_path $HOME/.oh-my-fish
 # Theme
 set fish_theme robbyrussell
 
+# pipsi
+set -x PATH /Users/chaitanyagupta/.local/bin $PATH
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-fish/plugins/*)
 # Custom plugins may be added to ~/.oh-my-fish/custom/plugins/
 # Example format: set fish_plugins bundler z
@@ -21,6 +23,7 @@ set -x PATH /Users/chaitanyagupta/bin/jruby/bin $PATH
 set -x PATH /Library/Frameworks/Python.framework/Versions/2.7/bin $PATH
 
 set -x SENCHA_CMD_3_0_0 /Users/chaitanyagupta/bin/Sencha/Cmd/5.1.2.52
+
 
 #bower
 set -x PATH /usr/local/bin/bower
@@ -55,16 +58,25 @@ alias venv="virtualenv"
 # autojump
 [ -f /usr/local/share/autojump/autojump.fish ]; and . /usr/local/share/autojump/autojump.fish
 
-#fisher
+# fisher
 for file in ~/.config/fish/conf.d/*.fish
     source $file
 end
+
+# powerline
+# function fish_prompt
+#     ~/powerline-shell.py $status --shell bare ^/dev/null
+# end
 
 # Serve a directory
 alias pysrv="python3 -m http.server "
 
 # ranger
 alias r "ranger"
+
+# ptpython
+
+alias ptpy "ptpython"
 
 # Quick Ping!
 alias pingu="ping 8.8.8.8"
@@ -81,7 +93,6 @@ alias noti "go/src/github.com/user/bin/noti"
 
 
 # Git
-
 
 alias gs "git status"
 alias gp "git push"
