@@ -3,6 +3,8 @@ set fish_path $HOME/.oh-my-fish
 
 # Theme
 set fish_theme robbyrussell
+set -x RED ff5555
+set -x GREEN 50fa7b
 
 # pipsi
 set -x PATH /Users/chaitanyagupta/.local/bin $PATH
@@ -58,6 +60,9 @@ alias venv="virtualenv"
 # autojump
 [ -f /usr/local/share/autojump/autojump.fish ]; and . /usr/local/share/autojump/autojump.fish
 
+# Use default ruby version
+rvm default
+
 # fisher
 for file in ~/.config/fish/conf.d/*.fish
     source $file
@@ -68,6 +73,22 @@ end
 #     ~/powerline-shell.py $status --shell bare ^/dev/null
 # end
 
+function dostuff --on-event fish_prompt
+    set -l git_branch (git branch ^/dev/null | sed -n '/\* /s///p')
+    echo \n
+    set_color $RED
+    echo -n (whoami)
+    set_color white
+    echo -n ' in '
+    set_color $GREEN
+    echo -n (basename $PWD)
+    set_color white
+    echo -n ' on '
+    set_color $RED
+    echo {"$git_branch"}
+    # echo -n "⮀ "
+end
+
 # Serve a directory
 alias pysrv="python3 -m http.server "
 
@@ -75,7 +96,6 @@ alias pysrv="python3 -m http.server "
 alias r "ranger"
 
 # ptpython
-
 alias ptpy "ptpython"
 
 # Quick Ping!
@@ -86,6 +106,9 @@ alias psqld "pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server
 
 #subliminal
 alias sub "subliminal -l en -- "
+
+# rubocop
+alias rcop "rubocop"
 
 # go repo's
 alias cheat "go/src/github.com/user/bin/cheat"
@@ -105,7 +128,7 @@ alias gdc "git diff --cached"
 alias gch "git checkout"
 alias gr "git reset HEAD"
 
-alias gl ""
+alias gl "git log --oneline"
 
 alias gb "git branch"
 alias grbi "git rebase -i master"
@@ -114,3 +137,5 @@ alias gst "git stash"
 alias gstp "git stash pop"
 
 alias gca "git commit --amend"
+
+alias gr "git remote -v"
