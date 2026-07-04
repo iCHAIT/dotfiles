@@ -24,4 +24,10 @@ ln -sf "$DIR/claude/CLAUDE.md" ~/.claude/CLAUDE.md
 ln -sf "$DIR/claude/settings.json" ~/.claude/settings.json
 ln -sf "$DIR/claude/statusline-command.sh" ~/.claude/statusline-command.sh
 
+# VS Code
+VSCODE_USER="$HOME/Library/Application Support/Code/User"
+mkdir -p "$VSCODE_USER"
+ln -sf "$DIR/vscode/settings.json" "$VSCODE_USER/settings.json"
+ln -sf "$DIR/vscode/keybindings.json" "$VSCODE_USER/keybindings.json"
+
 echo "Done. Open a new terminal to load the shell config."

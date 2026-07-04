@@ -1,0 +1,13 @@
+{
+    "jupyter.interactiveWindow.textEditor.executeSelection": true,
+    "workbench.editorAssociations": {
+        "*.copilotmd": "vscode.markdown.preview.editor",
+        "{git,gitlens,git-graph}:/**/*.{md,csv,svg}": "default"
+    },
+    "workbench.colorTheme": "One Dark Modern Classic",
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "claudeCode.preferredLocation": "panel",
+    "editor.fontFamily": "Monaco, Menlo, monospace",
+    "editor.fontSize": 16,
+    "files.trimTrailingWhitespace": true
+}
