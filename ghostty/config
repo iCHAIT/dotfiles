@@ -1,6 +1,12 @@
-# Theme and Appearance
-theme = Dark+
-font-family = "Anka/Coder" # Using the installed Anka/Coder font
-font-size = 14
-background-opacity = 0.8
-background-blur = true
+# Visual configuration
+theme = Rose Pine
+window-theme = dark
+macos-titlebar-style = tabs
+unfocused-split-opacity = 0.6
+
+# Typography
+font-family = JetBrains Mono
+font-size = 16
+
+# Behavior
+copy-on-select = clipboard

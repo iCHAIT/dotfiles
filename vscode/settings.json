@@ -7,7 +7,7 @@
     "workbench.colorTheme": "One Dark Modern Classic",
     "github.copilot.nextEditSuggestions.enabled": true,
     "claudeCode.preferredLocation": "panel",
-    "editor.fontFamily": "'SF Mono', Monaco, Menlo, monospace",
+    "editor.fontFamily": "'JetBrains Mono', 'SF Mono', Monaco, Menlo, monospace",
     "editor.fontSize": 16,
     "files.trimTrailingWhitespace": true,
     "files.insertFinalNewline": true,

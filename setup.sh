@@ -11,6 +11,9 @@ fi
 # Tools the zsh config expects
 brew install starship zoxide eza bat git-lfs
 
+# Font used by VS Code + Ghostty
+brew install --cask font-jetbrains-mono
+
 # Git
 ln -sf "$DIR/git/gitconfig" ~/.gitconfig
 ln -sf "$DIR/git/gitignore_global" ~/.gitignore_global
