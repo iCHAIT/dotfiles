@@ -14,3 +14,15 @@ sh setup.sh
 (`starship`, `zoxide`, `eza`, `bat`, `git-lfs`), then symlinks the configs into
 your home directory. Safe to re-run. Edit files here and changes apply live;
 commit and push to sync across machines.
+
+## Fonts
+
+Configs reference custom fonts not tracked in this repo. Install manually or
+configs fall back to defaults:
+
+- **Anka/Coder** (Ghostty terminal)
+- **SF Mono** (VS Code) — bundled in macOS Terminal.app; copy
+  `SF-Mono-*.otf` from its Resources/Fonts into `~/Library/Fonts/`
+
+TODO: decide whether to vendor these fonts into the repo (`fonts/`) so
+`setup.sh` can install them automatically.

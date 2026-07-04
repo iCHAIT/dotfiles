@@ -22,6 +22,10 @@ ln -sf "$DIR/zsh/zshrc" ~/.zshrc
 mkdir -p ~/.config
 ln -sf "$DIR/starship/starship.toml" ~/.config/starship.toml
 
+# Ghostty terminal
+mkdir -p ~/.config/ghostty
+ln -sf "$DIR/ghostty/config" ~/.config/ghostty/config
+
 # Claude Code (global settings, memory, statusline)
 mkdir -p ~/.claude
 ln -sf "$DIR/claude/CLAUDE.md" ~/.claude/CLAUDE.md

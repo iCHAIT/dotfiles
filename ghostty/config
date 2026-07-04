@@ -1,0 +1,6 @@
+# Theme and Appearance
+theme = Dark+
+font-family = "Anka/Coder" # Using the installed Anka/Coder font
+font-size = 14
+background-opacity = 0.8
+background-blur = true
