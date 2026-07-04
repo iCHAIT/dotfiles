@@ -7,13 +7,12 @@
     "workbench.colorTheme": "One Dark Modern Classic",
     "github.copilot.nextEditSuggestions.enabled": true,
     "claudeCode.preferredLocation": "panel",
-    "editor.fontFamily": "Monaco, Menlo, monospace",
+    "editor.fontFamily": "'SF Mono', Monaco, Menlo, monospace",
     "editor.fontSize": 16,
     "files.trimTrailingWhitespace": true,
     "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
     "editor.bracketPairColorization.enabled": true,
-    "editor.rulers": [80, 118],
     "editor.minimap.enabled": false,
     "workbench.editor.enablePreview": false
 }
