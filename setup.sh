@@ -18,6 +18,10 @@ ln -sf "$DIR/git/gitignore_global" ~/.gitignore_global
 # Zsh
 ln -sf "$DIR/zsh/zshrc" ~/.zshrc
 
+# Starship prompt
+mkdir -p ~/.config
+ln -sf "$DIR/starship/starship.toml" ~/.config/starship.toml
+
 # Claude Code (global settings, memory, statusline)
 mkdir -p ~/.claude
 ln -sf "$DIR/claude/CLAUDE.md" ~/.claude/CLAUDE.md
