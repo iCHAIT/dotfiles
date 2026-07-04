@@ -1,7 +1,8 @@
 DIR=$(cd "$(dirname "${BASH_SOURCE[0]}" )" && pwd )
 
 # Git
-ln -f $DIR/git/gitconfig ~/.gitconfig
+ln -sf $DIR/git/gitconfig ~/.gitconfig
+ln -sf $DIR/git/gitignore_global ~/.gitignore_global
 
 # Zsh
 # wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O - | sh

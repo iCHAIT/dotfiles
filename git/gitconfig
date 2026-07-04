@@ -1,14 +1,10 @@
-[filter "media"]
-	required = true
-	clean = git media clean %f
-	smudge = git media smudge %f
 [user]
-	name = iCHAIT
+	name = Chaitanya Gupta
 	email = cgupta319@gmail.com
 [push]
 	default = simple
 [core]
-	excludesfile = /Users/chaitanyagupta/Desktop/dotfiles/git/gitignore_global
+	excludesfile = ~/.gitignore_global
 [filter "lfs"]
 	clean = git-lfs clean %f
 	smudge = git-lfs smudge %f
