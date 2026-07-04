@@ -40,5 +40,8 @@ VSCODE_USER="$HOME/Library/Application Support/Code/User"
 mkdir -p "$VSCODE_USER"
 ln -sf "$DIR/vscode/settings.json" "$VSCODE_USER/settings.json"
 ln -sf "$DIR/vscode/keybindings.json" "$VSCODE_USER/keybindings.json"
+if command -v code >/dev/null 2>&1; then
+	xargs -n1 code --install-extension < "$DIR/vscode/extensions.txt"
+fi
 
 echo "Done. Open a new terminal to load the shell config."

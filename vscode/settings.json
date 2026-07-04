@@ -4,7 +4,7 @@
         "*.copilotmd": "vscode.markdown.preview.editor",
         "{git,gitlens,git-graph}:/**/*.{md,csv,svg}": "default"
     },
-    "workbench.colorTheme": "One Dark Modern Classic",
+    "workbench.colorTheme": "Catppuccin Mocha",
     "github.copilot.nextEditSuggestions.enabled": true,
     "claudeCode.preferredLocation": "panel",
     "editor.fontFamily": "'JetBrains Mono', 'SF Mono', Monaco, Menlo, monospace",
