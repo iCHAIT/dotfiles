@@ -17,3 +17,9 @@ ln -sf $DIR/zsh/zshrc ~/.zshrc
 # fish
 rm ~/.config/fish/config.fish
 ln -sf $DIR/fish/config.fish  ~/.config/fish/config.fish
+
+# Claude Code (global settings, memory, statusline)
+mkdir -p ~/.claude
+ln -sf $DIR/claude/CLAUDE.md              ~/.claude/CLAUDE.md
+ln -sf $DIR/claude/settings.json         ~/.claude/settings.json
+ln -sf $DIR/claude/statusline-command.sh ~/.claude/statusline-command.sh
