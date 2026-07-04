@@ -1,9 +1,16 @@
 # dotfiles
 
-My configuration for OS X 10.10.4
+My dot files shared between machines for ZSH, Claude, git, macOS etc
 
+## Setup on a new machine
 
+```sh
+git clone https://github.com/iCHAIT/dotfiles.git ~/Documents/Code/dotfiles
+cd ~/Documents/Code/dotfiles
+sh setup.sh
+```
 
-### TODO
-
-* Symlink sublime user settings
+`setup.sh` installs Homebrew (if missing) and the CLI tools the shell expects
+(`starship`, `zoxide`, `eza`, `bat`, `git-lfs`), then symlinks the configs into
+your home directory. Safe to re-run. Edit files here and changes apply live;
+commit and push to sync across machines.
