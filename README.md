@@ -10,10 +10,11 @@ cd ~/Documents/Code/dotfiles
 sh setup.sh
 ```
 
-`setup.sh` installs Homebrew (if missing) and the CLI tools the shell expects
-(`starship`, `zoxide`, `eza`, `bat`, `git-lfs`), then symlinks the configs into
-your home directory. Safe to re-run. Edit files here and changes apply live;
-commit and push to sync across machines.
+`setup.sh` installs Homebrew (if missing), the CLI tools the shell expects
+(`starship`, `zoxide`, `eza`, `bat`, `git-lfs`), and the apps this repo
+configures (Ghostty, VS Code), then symlinks the configs into your home
+directory and reinstalls VS Code extensions. Safe to re-run. Edit files here
+and changes apply live; commit and push to sync across machines.
 
 ## Fonts
 

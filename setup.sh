@@ -11,8 +11,8 @@ fi
 # Tools the zsh config expects
 brew install starship zoxide eza bat git-lfs
 
-# Font used by VS Code + Ghostty
-brew install --cask font-jetbrains-mono
+# Apps and font (casks)
+brew install --cask ghostty visual-studio-code font-jetbrains-mono
 
 # Git
 ln -sf "$DIR/git/gitconfig" ~/.gitconfig
@@ -40,8 +40,9 @@ VSCODE_USER="$HOME/Library/Application Support/Code/User"
 mkdir -p "$VSCODE_USER"
 ln -sf "$DIR/vscode/settings.json" "$VSCODE_USER/settings.json"
 ln -sf "$DIR/vscode/keybindings.json" "$VSCODE_USER/keybindings.json"
-if command -v code >/dev/null 2>&1; then
-	xargs -n1 code --install-extension < "$DIR/vscode/extensions.txt"
+CODE_BIN="$(command -v code || echo "/Applications/Visual Studio Code.app/Contents/Resources/app/bin/code")"
+if [ -x "$CODE_BIN" ] || command -v code >/dev/null 2>&1; then
+	xargs -n1 "$CODE_BIN" --install-extension < "$DIR/vscode/extensions.txt"
 fi
 
 echo "Done. Open a new terminal to load the shell config."
