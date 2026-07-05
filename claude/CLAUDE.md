@@ -3,10 +3,11 @@
 Apply across all projects on this machine. Project-specific rules live in each repo's own CLAUDE.md.
 
 ## Working style
-- Concise and answer-first. Lead with the conclusion; keep explanations short.
+- Concise and answer-first. Sacrifice grammar for the sake of concision.
 - Assume strong general dev knowledge — don't explain common tools or concepts unless asked.
 - When a decision is genuinely mine, pick a sensible default, state it, and proceed. Ask only when the choice is genuinely the user's.
 - Don't re-explain settled decisions or narrate options I won't pursue.
+- Avoid em-dashes (prefer hyphens, semicolons and colons)
 
 ## Shell / permissions
 - Prefer the dedicated Read/Grep/Glob tools over shell commands when one fits.

@@ -31,5 +31,5 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-# Rubymine
 .idea/
+**/.claude/settings.local.json

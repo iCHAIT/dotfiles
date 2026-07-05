@@ -1,14 +1,4 @@
 {
-  "alwaysThinkingEnabled": false,
-  "theme": "light",
-  "effortLevel": "high",
-  "autoUpdatesChannel": "latest",
-  "voiceEnabled": true,
-  "skipWorkflowUsageWarning": true,
-  "statusLine": {
-    "type": "command",
-    "command": "~/.claude/statusline-command.sh"
-  },
   "permissions": {
     "allow": [
       "Bash(ls:*)",
@@ -29,10 +19,25 @@
       "Bash(git log:*)",
       "Bash(git diff:*)",
       "Bash(git show:*)",
-      "Bash(git branch:*)"
+      "Bash(git branch:*)",
+      "WebSearch"
     ],
     "deny": [
       "Bash(git push:*)"
     ]
-  }
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "~/.claude/statusline-command.sh"
+  },
+  "alwaysThinkingEnabled": false,
+  "effortLevel": "high",
+  "autoUpdatesChannel": "latest",
+  "voice": {
+    "enabled": true,
+    "mode": "hold"
+  },
+  "skipWorkflowUsageWarning": true,
+  "theme": "light",
+  "voiceEnabled": true
 }
